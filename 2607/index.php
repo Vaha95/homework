@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-<ul class="nav navbar-nav col-lg-ul-nav">
+    <ul class="nav navbar-nav col-lg-ul-nav">
 <li role="presentation" class="active dropdown">
 <button><a href="task_1">Задание 1</a></button>
 </li>
@@ -36,6 +36,12 @@
 <li role="presentation">
 <button><a href="task_6">Задание 6</a></button>
 </li>
+<li role="presentation">
+<button><a href="task_7">Задание 7</a></button>
+</li>
 </ul>
+
 </body>
 </html>
+
+
