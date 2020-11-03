@@ -20,6 +20,8 @@ CREATE TABLE modification (id INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, title VAR
 
 CREATE TABLE detail (id INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, title VARCHAR(50), modification INT(5) NOT NULL REFERENCES modification(id), PRIMARY KEY(id), INDEX(title));
 
+INSERT INTO brand (title) VALUES ('Brand 1'),('Brand 2'),('Brand 3');
+
 SET @brand = (SELECT id FROM brand WHERE title='Brand 1'); INSERT INTO factory (brand, title) VALUES (@brand, 'Factory 1,1'),(@brand, 'Factory 1,2'),(@brand, 'Factory 1,3');
 
 SET @brand = (SELECT id FROM brand WHERE title='Brand 1'); INSERT INTO model (brand, title) VALUES (@brand, 'Model 1,1'),(@brand, 'Model 1,2');
